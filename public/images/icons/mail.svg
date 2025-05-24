@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="24"
+     height="24"
+     viewBox="0 0 256 256"
+     fill="none"
+     stroke="white"
+     stroke-width="8"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     class="icon icon-tabler icons-tabler-outline icon-tabler-mail">
+  <path stroke="none" d="M0 0h256v256H0z" fill="none"/>
+  <path d="M32 74.67a21.33 21.33 0 0 1 21.33 -21.34h149.34a21.33 21.33 0 0 1 21.33 21.34v106.66a21.33 21.33 0 0 1 -21.33 21.34h-149.34a21.33 21.33 0 0 1 -21.33 -21.34v-106.66z" />
+  <path d="M32 74.67l96 64l96 -64" />
+</svg>
