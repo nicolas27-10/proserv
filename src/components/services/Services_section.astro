@@ -2,107 +2,17 @@
 import Service_card from './Service_card.astro';
 ---
 
-<section class="py-16 bg-white">
+<section class="py-16 bg-white ">
   
-  <Service_card title='Control de cucarachas' description='Las cucarachas son portadoras de enfermedades y pueden contaminar alimentos y superficies. Nuestro tratamiento elimina eficazmente tanto las cucarachas adultas como sus huevos.' imageUrl='https://images.unsplash.com/photo-1493962853295-0fd70327578a?q=80&w=6000&auto=format&fit=crop' elements={[{ text: 'Tratamiento con gel específico para cucarachas' }, {text: 'Pulverización en zonas de difícil acceso'}, { text: 'Sellado de grietas y huecos para prevenir reinvasiones'}]}/>
+  <Service_card title='Control de cucarachas' description='Las cucarachas son portadoras de enfermedades y pueden contaminar alimentos y superficies. Nuestro tratamiento elimina eficazmente tanto las cucarachas adultas como sus huevos.' imageUrl='../images/services/roedor.jpg' elements={[{ text: 'Tratamiento con gel específico para cucarachas' }, {text: 'Pulverización en zonas de difícil acceso'}, { text: 'Sellado de grietas y huecos para prevenir reinvasiones'}]}/>
   <Service_card title='Control de termitas' description='Las termitas pueden causar daños estructurales graves en edificios. Nuestro tratamiento contra termitas elimina la colonia completa y protege tu propiedad.' imageUrl='https://images.unsplash.com/photo-1535268647677-300dbf3d78d1?q=80&w=3057&auto=format&fit=crop' elements={[{ text: 'Inspección exhaustiva de la estructura' }, {text: 'Tratamiento con cebos o barreras químicas'}, { text: 'Garantía de hasta 5 años en tratamientos completos'}]}/>
-  <Service_card title='Control de roedores' description='Los roedores pueden transmitir enfermedades
-  y causar daños en cables y estructuras. Nuestro servicio incluye la eliminación de roedores y la prevención de futuras invasiones.' imageUrl='https://images.unsplash.com/photo-1498936178812-4b2e558d2937?q=80&w=3057&auto=format&fit=crop' elements={[{ text: 'Colocación estratégica de cebos y trampas' }, {text: 'Identificación y sellado de puntos de entrada'}, { text: 'Asesoramiento para prevenir reinvasiones'}]}/>
 
-          
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-              <div class="order-2 md:order-1 bg-gray-100 rounded-lg overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1535268647677-300dbf3d78d1?q=80&w=3057&auto=format&fit=crop" 
-                  alt="Control de termitas" 
-                  class="w-full h-full object-cover"
-                />
-              </div>
-              <div class="order-1 md:order-2">
-                <div class="flex items-center mb-4">
-                  <h2 class="text-2xl font-bold">Control de termitas</h2>
-                </div>
-                <p class="text-gray-600 mb-4">
-                  Las termitas pueden causar daños estructurales graves en edificios. Nuestro tratamiento contra termitas elimina la colonia completa y protege tu propiedad.
-                </p>
-                <ul class="space-y-2 mb-6">
-                  <li class="flex items-start">
-                    <span>Inspección exhaustiva de la estructura</span>
-                  </li>
-                  <li class="flex items-start">
-                    <span>Tratamiento con cebos o barreras químicas</span>
-                  </li>
-                  <li class="flex items-start">
-                    <span>Garantía de hasta 5 años en tratamientos completos</span>
-                  </li>
-                </ul>
-                <a class="" href="">
-                  <button class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded text-semibold text-white">
-                    Solicitar presupuesto
-                  </button>
-                </a>
-              </div>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-              <div>
-                <div class="flex items-center mb-4">
-                  <h2 class="text-2xl font-bold">Control de roedores</h2>
-                </div>
-                <p class="text-gray-600 mb-4">
-                  Los roedores pueden transmitir enfermedades y causar daños en cables y estructuras. Nuestro servicio incluye la eliminación de roedores y la prevención de futuras invasiones.
-                </p>
-                <ul class="space-y-2 mb-6">
-                  <li class="flex items-start">
-                    <span>Colocación estratégica de cebos y trampas</span>
-                  </li>
-                  <li class="flex items-start">
-                    <span>Identificación y sellado de puntos de entrada</span>
-                  </li>
-                  <li class="flex items-start">
-                    <span>Asesoramiento para prevenir reinvasiones</span>
-                  </li>
-                </ul>
-                <button class="bg-green-600 hover:bg-green-700">Solicitar presupuesto</button>
-              </div>
-              <div class="bg-gray-100 rounded-lg overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1498936178812-4b2e558d2937?q=80&w=3057&auto=format&fit=crop" 
-                  alt="Control de roedores" 
-                  class="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div class="order-2 md:order-1 bg-gray-100 rounded-lg overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1493962853295-0fd70327578a?q=80&w=6000&auto=format&fit=crop" 
-                  alt="Fumigación general" 
-                  class="w-full h-full object-cover"
-                />
-              </div>
-              <div class="order-1 md:order-2">
-                <div class="flex items-center mb-4">
-                  <h2 class="text-2xl font-bold">Fumigación general</h2>
-                </div>
-                <p class="text-gray-600 mb-4">
-                  Nuestro servicio de fumigación general elimina todo tipo de insectos como moscas, mosquitos, hormigas, arañas y más. Ideal para tratamientos preventivos periódicos.
-                </p>
-                <ul class="space-y-2 mb-6">
-                  <li class="flex items-start">
-                    <span>Fumigación completa de interiores y exteriores</span>
-                  </li>
-                  <li class="flex items-start">
-                    <span>Productos de baja toxicidad seguros para el hogar</span>
-                  </li>
-                  <li class="flex items-start">
-                    <span>Plan de mantenimiento trimestral disponible</span>
-                  </li>
-                </ul>
-                <button class="bg-green-600 hover:bg-green-700">Solicitar presupuesto</button>
-              </div>
-            </div>
-          </div>
+  <Service_card 
+    title='Control de roedores' 
+    description='Los roedores pueden transmitir enfermedades y causar daños en cables y estructuras. Nuestro servicio incluye la eliminación de roedores y la prevención de futuras invasiones.' 
+    imageUrl='../images/services/roedor.jpg' 
+    elements={[{ text: 'Colocación estratégica de cebos y trampas' }, {text: 'Identificación y sellado de puntos de entrada'}, { text: 'Asesoramiento para prevenir reinvasiones'}]}
+  />
+
+
         </section>
