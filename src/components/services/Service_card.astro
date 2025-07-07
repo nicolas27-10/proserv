@@ -7,13 +7,14 @@ interface Props {
         icon?: string;
         text: string;
     }>;
+    id?: string;
 }
 
-const { title, description, imageUrl, elements = [] } = Astro.props;
+const { title, description, imageUrl, elements = [], id } = Astro.props;
 ---
 
 <div class="container mx-auto px-4">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 shadow-2xl rounded-xl">
+    <div id={id} class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 shadow-2xl rounded-xl snap-center">
         <div class="p-6">
             <div class="flex items-center mb-4">
                 <h2 class="text-2xl font-bold">{title}</h2>
@@ -27,6 +28,7 @@ const { title, description, imageUrl, elements = [] } = Astro.props;
                     <ul class="space-y-2 mb-6">
                         {elements.map((element) => (
                             <li class="flex items-start">
+                                <img class="w-5 h-5 text-blue-600 mr-2" src="/images/icons/square-check.svg" />
                                 <span>{element.text}</span>
                             </li>
                         ))}
@@ -40,7 +42,7 @@ const { title, description, imageUrl, elements = [] } = Astro.props;
             </a>
         </div>
 
-        <div class="bg-gray-100 rounded-r-lg overflow-hidden md:relative">
+        <div class="bg-gray-100 md:rounded-r-lg rounded-b-lg overflow-hidden md:relative">
             <img
                 src={imageUrl}
                 alt="Control de cucarachas"
