@@ -1,10 +1,9 @@
 ---
-interface Props {
+export interface Props {
     title: string;
     description: string;
     imageUrl: string;
     elements?: Array<{
-        icon?: string;
         text: string;
     }>;
 }
@@ -18,7 +17,7 @@ const { title, description, imageUrl, elements = [] } = Astro.props;
             <div class="flex items-center mb-4">
                 <h2 class="text-2xl font-bold">{title}</h2>
             </div>
-            <p class="text-gray-600 mb-4">
+            <p class="text-gray-800 mb-4">
                 {description}
             </p>
 
@@ -27,15 +26,17 @@ const { title, description, imageUrl, elements = [] } = Astro.props;
                     <ul class="space-y-2 mb-6">
                         {elements.map((element) => (
                             <li class="flex items-start">
-                                <span>{element.text}</span>
+                                <span>✔ {element.text}</span>
                             </li>
                         ))}
                     </ul>
                 )
             }
-            <button class="bg-green-600 hover:bg-green-700">
-                Solicitar presupuesto
-            </button>
+            <a href="Contact">
+                <button class="bg-sky-600 hover:bg-sky-700 px-4 py-2 rounded text-semibold text-white">
+                    Solicitar presupuesto
+                </button>
+            </a>
         </div>
 
         <div class="bg-gray-100 rounded-lg overflow-hidden">
