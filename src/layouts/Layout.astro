@@ -22,11 +22,19 @@ import ClientRouter from 'astro/components/ClientRouter.astro';
 		<title>{title}</title>
 		<ClientRouter />
 	</head>
-	<body class="scroll-smooth">
+	<!-- <body class="scroll-smooth">
 		<Header/>
 		<slot />
 		<Footer/>
-	</body>
+	</body> -->
+
+	<body class="scroll-smooth font-montserrat min-h-screen grid grid-rows-[auto_1fr_auto]">
+    <Header />
+    <main class="min-h-0 md:mt-18 mt-12">
+        <slot />
+    </main>
+    <Footer />
+</body>
 </html>
 
 <style>
