@@ -1,10 +1,14 @@
 ---
 import Hero from '../components/Hero.astro';
 import Layout from '../layouts/Layout.astro';
+import Info from '../components/contact/Info.astro';
+import Mapa from '../components/contact/Mapa.astro';
+import Preguntas from '../components/contact/Preguntas.astro';
 ---
 
 <Layout title="ProServ - Chile. Servicios profesionales de control de plagas - Contacto">
-	<main>
-		<Hero title='Contactanos'/>
-	</main>
+	<Hero title='Contactanos' description='Estamos aquí para ayudarte con cualquier problema de plagas. Contáctanos y te responderemos lo antes posible.'/>
+	<Info />
+	<Mapa />
+	<Preguntas />
 </Layout>

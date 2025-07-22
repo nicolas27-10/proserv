@@ -1,10 +1,16 @@
 ---
 import Hero from '../components/services/Hero.astro';
 import Layout from '../layouts/Layout.astro';
+import Contactanos from '../components/Contactanos.astro';
+import NuestraHistoria from '../components/nosotros/NuestraHistoria.astro';
+import Valores from '../components/nosotros/Valores.astro';
+import NuestroEquipo from '../components/nosotros/NuestroEquipo.astro';
 ---
 
 <Layout title="ProServ - Chile. Servicios profesionales de control de plagas - Nosotros">
-	<main>
-		<Hero title='Acerca de nosotros'/>
-	</main>
+    <Hero title='Acerca de nosotros'/>
+	<NuestraHistoria />
+    <Valores />
+	<NuestroEquipo />
+	<Contactanos title='¿Listo para trabajar con nosotros?' description='Confía en nuestra experiencia para resolver tu problema de plagas de forma eficaz, segura y profesional.' />
 </Layout>

@@ -1,5 +1,5 @@
 ---
-import Contactanos from '../components/index/Contactanos.astro';
+import Contactanos from '../components/Contactanos.astro';
 import PorqueElegirnos from '../components/index/PorqueElegirnos.astro';
 import Proceso from '../components/index/Proceso.astro';
 import SrvSeccion from '../components/index/SrvSeccion.astro';
@@ -11,11 +11,9 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="ProServ - Chile. Servicios profesionales de control de plagas">
-	<main>
-		<Welcome />
-		<SrvSeccion />
-		<PorqueElegirnos />
-		<Proceso />	
-		<Contactanos />
-	</main>
+	<Welcome />
+	<SrvSeccion />
+	<PorqueElegirnos />
+	<Proceso />	
+	<Contactanos title='¿Problemas con insectos? ¡Contáctanos hoy!' description='Ofrecemos presupuestos gratuitos y sin compromiso. Nuestros técnicos estarán encantados de ayudarte a resolver tu problema de plagas.' />
 </Layout>

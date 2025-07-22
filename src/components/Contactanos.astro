@@ -1,8 +1,16 @@
+---
+export interface Props {
+    title: string;
+    description?: string;
+}
+const { title, description } = Astro.props;
+---
+
 <section class="py-16 bg-gradient-to-br from-teal-500 to-teal-900 text-white">
     <div class="container mx-auto px-4 text-center">
-        <h2 class="text-3xl font-bold mb-4">¿Problemas con insectos? ¡Contáctanos hoy!</h2>
+        <h2 class="text-3xl font-bold mb-4">{title}</h2>
         <p class="max-w-2xl mx-auto mb-8 text-xl text-green-50">
-        Ofrecemos presupuestos gratuitos y sin compromiso. Nuestros técnicos estarán encantados de ayudarte a resolver tu problema de plagas.
+            {description}
         </p>
         <div class="flex flex-col items-center justify-center mb-8">
             <div class="flex sm:flex-row gap-8 sm:gap-16">
@@ -21,7 +29,7 @@
                 </a>
             </div>
             <p class="text-sm mt-4 text-blue-100">
-                Escribenos por cualquiera de estos medios y te contactaremos a la brevedad.
+                Contáctanos por cualquiera de estos medios y te contactaremos a la brevedad.
             </p>
         </div>
     </div>
