@@ -1,8 +1,9 @@
 <footer class="bg-[#13171C] text-white z-20 p-5 text-left min-h-[15vh] flex py-10 xl:py-16">
 
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div>
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-8">
+            <!-- Logo y descripción -->
+            <div class="lg:col-span-2">
                 <div class="flex items-center mb-4">
                     <a href="/">
                         <img class="h-20" src="/images/logo/proserv-logo-sf.png"/>
@@ -13,15 +14,17 @@
                 </p>
                 <p class="flex flex-col gap-1 text-sm text-green-100">
                     <span class="text-green-100 font-semibold inline-flex"><img src="/images/icons/point.svg" alt="point icon"> Control de plagas</span>
-                    <span class="text-green-100 font-semibold flex"><img src="/images/icons/point.svg" alt="point icon"> Aseo y limpieza general</span>
+                    <span class="text-green-100 font-semibold flex"><img src="/images/icons/point.svg" alt="point icon"> Aseo y limpieza</span>
                     <span class="text-green-100 font-semibold flex"><img src="/images/icons/point.svg" alt="point icon"> Mantención de jardines</span> 
-                    <span class="text-green-100 font-semibold inline-flex items-start"><img class="translate-y-0.5" src="/images/icons/point.svg" alt="point icon"> Asesorías en control de plagas urbanas y de jardin</span>
+                    <span class="text-green-100 font-semibold inline-flex items-start"><img class="translate-y-0.5" src="/images/icons/point.svg" alt="point icon"> Asesorías profesionales</span>
                 </p>
                 <p class="text-green-100 text-sm mt-4">
                     © ProServ Chile. todos los derechos reservados.
                 </p>
+                <p class="mt-4 text-md">Página desarrollada por <a class="text-blue-500 hover:text-blue-300" href="https://www.linkedin.com/in/nicolás-castillo-cerda" target="_blank">@Nicolas Castillo</a></p>
             </div>
             
+            <!-- Enlaces rápidos -->
             <div>
                 <h4 class="font-semibold text-lg mb-4">Enlaces rápidos</h4>
                 <ul class="space-y-2">
@@ -40,7 +43,6 @@
                         Nosotros
                     </a>
                     </li>
-                    
                     <li>
                     <a href="/contact" class="text-green-100 hover:text-white transition-colors">
                         Contacto
@@ -49,66 +51,118 @@
                 </ul>
             </div>
             
-            <div>
-                <h4 class="font-semibold text-lg mb-4">Servicios</h4>
-                <ul class="space-y-2">
-                    <li>
-                        <a href="/services#control-de-cucarachas" class="text-green-100 hover:text-white transition-colors">
-                            Control de cucarachas
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/services#control de termitas" class="text-green-100 hover:text-white transition-colors">
-                            Control de termitas
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/services#control de roedores" class="text-green-100 hover:text-white transition-colors">
-                            Control de roedores
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            
-            <div>
-                <h4 class="font-semibold text-lg mb-4">Contacto</h4>
-                <ul class="space-y-3">
-                    <li class="flex items-start">
-                        <img src="/images/icons/phone_white.svg" class="h-5 w-5 mr-2 flex-shrink-0 mt-0.5" />
-                        <a href="tel:956484233" class="hover:underline">
-                            +56 9 5648 4233
-                        </a>
-                    </li>
-                    <li class="flex items-start">
-                        <img src="/images/icons/mail.svg" class="h-5 w-5 mr-2 flex-shrink-0 mt-0.5" />
-                        <a href="mailto:contacto@proserv-chile.com" class="hover:underline">
-                            contacto@proserv-chile.com
-                        </a>
-                    </li>
-                    <!-- <li class="flex items-start">
-                        <img src="images/icons/map-pin.svg" class="h-5 w-5 mr-2 flex-shrink-0 mt-0.5" />
-                        <address class="not-italic">
-                            Calle Principal 123<br />
-                            28001 Madrid, España
-                        </address>
-                    </li> -->
-                </ul>
-                <h4 class="font-semibold text-lg mb-4 mt-4">Redes Sociales</h4>
-                <div class="flex space-x-4">  
-                    <a href="https://www.instagram.com/proserv.chile" target="_blank" class="text-green-100 hover:scale-110 transition-colors">
-                        <img src="/images/icons/rrss/instagram.svg" class="h-6 w-6" alt="Instagram"/>
-                    </a>
-                    <a href="https://wa.me/56956484233" target="_blank" class="text-green-100 hover:scale-110 transition-colors">
-                        <img src="/images/icons/rrss/whatsapp.svg" class="h-6 w-6" alt="Whatsapp"/>
-                    </a>
-                    <a href="https://www.tiktok.com/@proserv.chile" target="_blank" class="text-green-100 hover:scale-110 transition-colors">
-                        <img src="/images/icons/rrss/tiktok.svg" class="h-6 w-6" alt="Tiktok"/>
-                    </a>
-                    <a href="https://www.facebook.com/people/ProServ-Control-de-Plagas/61571951369005/?_rdr" target="_blank" class="text-green-100 hover:scale-110 transition-colors">
-                        <img src="/images/icons/rrss/facebook.svg" class="h-6 w-6" alt="Facebook"/>
-                    </a>
+            <!-- Servicios organizados -->
+            <div class="lg:col-span-2">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Control de plagas -->
+                    <div>
+                        <h4 class="font-semibold text-lg mb-3">Control de plagas</h4>
+                        <ul class="space-y-2 mb-4">
+                            <li>
+                                <a href="/services#control-de-insectos" class="text-green-100 hover:text-white transition-colors text-sm">
+                                    Control de insectos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/services#control-de-roedores" class="text-green-100 hover:text-white transition-colors text-sm">
+                                    Control de roedores
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/services#rescate-abejas" class="text-green-100 hover:text-white transition-colors text-sm">
+                                    Rescate de abejas
+                                </a>
+                            </li>
+                        </ul>
+                        
+                        <h4 class="font-semibold text-lg mb-3">Aseo y limpieza</h4>
+                        <ul class="space-y-2">
+                            <li>
+                                <a href="/services#aseo-profundo" class="text-green-100 hover:text-white transition-colors text-sm">
+                                    Aseo profundo
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/services#limpieza-mantencion" class="text-green-100 hover:text-white transition-colors text-sm">
+                                    Limpieza de mantención
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Mantención y asesorías -->
+                    <div>
+                        <h4 class="font-semibold text-lg mb-3">Mantención de jardines</h4>
+                        <ul class="space-y-2 mb-4">
+                            <li>
+                                <a href="/services#mantencion-jardines" class="text-green-100 hover:text-white transition-colors text-sm">
+                                    Mantención de áreas verdes
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/services#sistemas-riego" class="text-green-100 hover:text-white transition-colors text-sm">
+                                    Sistemas de riego
+                                </a>
+                            </li>
+                        </ul>
+                        
+                        <h4 class="font-semibold text-lg mb-3">Asesorías profesionales</h4>
+                        <ul class="space-y-2">
+                            <li>
+                                <a href="/services#asesoria-plagas" class="text-green-100 hover:text-white transition-colors text-sm">
+                                    Control de plagas urbanas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/services#asesoria-huertas" class="text-green-100 hover:text-white transition-colors text-sm">
+                                    Huertas urbanas
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <p class="mt-4 text-md">Página desarrollada por <br><a class="text-blue-500 hover:text-blue-300" href="https://www.linkedin.com/in/nicolás-castillo-cerda" target="_blank">@Nicolas Castillo</a></p>
+            </div>
+        </div>
+        
+        <!-- Contacto y redes sociales en fila separada -->
+        <div class="mt-8 pt-8 border-t border-gray-700">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Contacto</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <img src="/images/icons/phone_white.svg" class="h-5 w-5 mr-2 flex-shrink-0 mt-0.5" />
+                            <a href="tel:956484233" class="hover:underline">
+                                +56 9 5648 4233
+                            </a>
+                        </li>
+                        <li class="flex items-start">
+                            <img src="/images/icons/mail.svg" class="h-5 w-5 mr-2 flex-shrink-0 mt-0.5" />
+                            <a href="mailto:contacto@proserv-chile.com" class="hover:underline">
+                                contacto@proserv-chile.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Redes Sociales</h4>
+                    <div class="flex space-x-4">  
+                        <a href="https://www.instagram.com/proserv.chile" target="_blank" class="text-green-100 hover:scale-110 transition-colors">
+                            <img src="/images/icons/rrss/instagram.svg" class="h-6 w-6" alt="Instagram"/>
+                        </a>
+                        <a href="https://wa.me/56956484233" target="_blank" class="text-green-100 hover:scale-110 transition-colors">
+                            <img src="/images/icons/rrss/whatsapp.svg" class="h-6 w-6" alt="Whatsapp"/>
+                        </a>
+                        <a href="https://www.tiktok.com/@proserv.chile" target="_blank" class="text-green-100 hover:scale-110 transition-colors">
+                            <img src="/images/icons/rrss/tiktok.svg" class="h-6 w-6" alt="Tiktok"/>
+                        </a>
+                        <a href="https://www.facebook.com/people/ProServ-Control-de-Plagas/61571951369005/?_rdr" target="_blank" class="text-green-100 hover:scale-110 transition-colors">
+                            <img src="/images/icons/rrss/facebook.svg" class="h-6 w-6" alt="Facebook"/>
+                        </a>
+                    </div>
+                    
+                </div>
             </div>
         </div>
     </div>
