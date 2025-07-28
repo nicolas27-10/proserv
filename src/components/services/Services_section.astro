@@ -2,42 +2,96 @@
 import Service_card from "./Service_card.astro";
 ---
 
-<section class="py-16 min-h-screen bg-white scroll-mt-40">
-  
-  <Service_card 
-    id='control-de-cucarachas' 
-    title='Control de cucarachas' 
-    description='Las cucarachas son portadoras de enfermedades y pueden contaminar alimentos y superficies. Nuestro tratamiento elimina eficazmente tanto las cucarachas adultas como sus huevos.' 
-    imageUrl='../images/services/cucarachas.jpg' 
-    elements= {[
-      { text: 'Tratamiento con gel específico para cucarachas' }, 
-      { text: 'Pulverización en zonas de difícil acceso'},
-      { text: 'Sellado de grietas y huecos para prevenir reinvasiones'}
-    ]}
-  />
-  
-  <Service_card 
-    id='control de termitas' 
-    title='Control de termitas' 
-    description='Las termitas pueden causar daños estructurales graves en edificios. Nuestro tratamiento contra termitas elimina la colonia completa y protege tu propiedad.' 
-    imageUrl='../images/services/termitas.jpg'  
-    elements= {[
-      { text: 'Inspección exhaustiva de la estructura' }, 
-      { text: 'Tratamiento con cebos o barreras químicas'}, 
-      { text: 'Garantía de hasta 5 años en tratamientos completos'}
-    ]}
-  />
+<section class="py-16 min-h-screen bg-white scroll-mt-40 max-w-[1400px] 2xl:px-0 mx-auto px-4">
 
-  <Service_card 
-    id='control de roedores'
-    title='Control de roedores' 
-    description='Los roedores pueden transmitir enfermedades y causar daños en cables y estructuras. Nuestro servicio incluye la eliminación de roedores y la prevención de futuras invasiones.' 
-    imageUrl='../images/services/roedor.jpg' 
-    elements= {[
-      { text: 'Colocación estratégica de cebos y trampas' }, 
-      { text: 'Identificación y sellado de puntos de entrada'}, 
-      { text: 'Asesoramiento para prevenir reinvasiones'}
-    ]}
-  />
+  <!-- Control de plagas -->
+  <div class="mb-16">
+    <h2 class="text-3xl font-bold text-gray-800 mb-8 md:text-start text-center">Servicios de control de plagas</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <Service_card 
+        id='control-de-insectos' 
+        title='Control de insectos' 
+        imageUrl='/images/services/cucarachas.jpg' 
+        elements= {[
+          { text: 'Control de cucarachas' }, 
+          { text: 'Control de termitas'},
+          { text: 'Control de avispas'}
+        ]}
+      />
+      
+      <Service_card 
+        id='control-de-roedores' 
+        title='Control de roedores' 
+        imageUrl='/images/services/roedor.jpg'  
+        elements= {[
+          { text: 'Control de ratas' }, 
+          { text: 'Control de ratones'}, 
+          { text: 'Control de conejos'}
+        ]}
+      />
+
+      <Service_card 
+        id='rescate-abejas'
+        title='Rescate y relocalización de abejas' 
+        description='Junto a los apicultores de polinizarte SpA ofrecemos el servicio de panales de abejas presentes en casa o jardines relocalizándolas.'
+        imageUrl='/images/services/cucarachas.jpg' 
+      />
+    </div>
+  </div>
+
+  <!-- Servicio de aseo y limpieza -->
+  <div class="mb-16">
+    <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center md:text-start">Servicio de aseo y limpieza</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <Service_card 
+        id='aseo-profundo'
+        title='Aseo profundo' 
+        description='Aseo inicial para posterior mantención.'
+        imageUrl='/images/services/roedor.jpg' 
+      />
+
+      <Service_card 
+        id='limpieza-mantencion'
+        title='Limpieza de mantención' 
+        imageUrl='/images/services/termitas.jpg' 
+      />
+    </div>
+  </div>
+
+  <!-- Servicio de mantención de jardines -->
+  <div class="mb-16">
+    <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center md:text-start">Servicio de mantención de jardines</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <Service_card 
+        id='mantencion-jardines'
+        title='Mantención de áreas verdes y jardines' 
+        imageUrl='/images/services/cucarachas.jpg' 
+      />
+
+      <Service_card 
+        id='sistemas-riego'
+        title='Reparación y construcción de sistemas de riego' 
+        imageUrl='/images/services/roedor.jpg' 
+      />
+    </div>
+  </div>
+
+  <!-- Servicio de asesoría profesional -->
+  <div class="mb-16">
+    <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center md:text-start">Servicio de asesoría profesional</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <Service_card 
+        id='asesoria-plagas'
+        title='Asesorías en control de plagas urbanas y de jardín' 
+        imageUrl='/images/services/termitas.jpg' 
+      />
+
+      <Service_card 
+        id='asesoria-huertas'
+        title='Asesorías en huertas urbanas' 
+        imageUrl='/images/services/cucarachas.jpg' 
+      />
+    </div>
+  </div>
 
 </section>
