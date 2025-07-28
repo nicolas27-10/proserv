@@ -26,8 +26,7 @@ const { title, description, imageUrl, elements = [], id } = Astro.props;
             <div class="flex items-center mb-4">
                 <h2 class="text-xl font-bold text-gray-800">{title}</h2>
             </div>
-            <p class="text-gray-600 mb-4 text-sm">
-                {description}
+            <p class="text-gray-600 mb-4 text-sm" set:html={description}>
             </p>
 
             {
