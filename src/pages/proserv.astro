@@ -1,0 +1,19 @@
+---
+import Contactanos from '../components/Contactanos.astro';
+import PorqueElegirnos from '../components/proserv/PorqueElegirnos.astro';
+import Proceso from '../components/proserv/Proceso.astro';
+import SrvSeccion from '../components/proserv/SrvSeccion.astro';
+import Welcome from '../components/proserv/Welcome.astro';
+import Layout from '../layouts/Layout.astro';
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout title="ProServ - Chile. Servicios profesionales de control de plagas">
+	<Welcome />
+	<SrvSeccion />
+	<PorqueElegirnos />
+	<Proceso />	
+	<Contactanos title='¿Problemas con alguna plaga? ¡Contáctanos hoy!' description='Ofrecemos presupuestos gratuitos y sin compromiso. Nuestros técnicos estarán encantados de ayudarte a resolver tu problema de plagas.' />
+</Layout>
