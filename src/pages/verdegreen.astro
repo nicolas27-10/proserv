@@ -1,0 +1,435 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="VerdeGreen - Cuidado del Medio Ambiente y Jardines">
+	<div class="min-h-screen bg-gradient-to-br from-emerald-50 via-green-50 to-teal-50">
+		<!-- Hero Section -->
+		<section class="relative py-20 overflow-hidden">
+			<!-- Elementos decorativos -->
+			<div class="absolute inset-0">
+				<div class="absolute top-20 left-10 w-96 h-96 bg-emerald-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+				<div class="absolute top-40 right-20 w-80 h-80 bg-green-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" style="animation-delay: 2s;"></div>
+				<div class="absolute bottom-20 left-1/4 w-72 h-72 bg-teal-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" style="animation-delay: 4s;"></div>
+			</div>
+
+			<div class="container mx-auto px-4 relative z-10">
+				<div class="max-w-6xl mx-auto text-center">
+					<!-- Logo -->
+					<div class="mb-12">
+						<div class="w-64 h-64 mx-auto mb-8 p-4 flex items-center justify-center bg-white/80 backdrop-blur-sm rounded-3xl shadow-2xl border border-white/20">
+							<img 
+								src="/images/logo/Logo VerdeGreen.png" 
+								alt="Logo VerdeGreen" 
+								class="max-w-full max-h-full object-contain"
+							/>
+						</div>
+					</div>
+
+					<!-- Badge -->
+					<div class="inline-flex items-center px-6 py-3 bg-white/80 backdrop-blur-sm rounded-full shadow-lg border border-white/20 mb-8">
+						<div class="w-2 h-2 bg-emerald-500 rounded-full mr-3 animate-pulse"></div>
+						<span class="text-sm font-medium text-gray-700">Soluciones Sostenibles para el Medio Ambiente</span>
+					</div>
+
+					<!-- Título principal -->
+					<h1 class="text-5xl md:text-7xl font-black text-gray-900 mb-8 leading-tight">
+						<span class="bg-gradient-to-r from-emerald-600 via-green-600 to-teal-600 bg-clip-text text-transparent">
+							VerdeGreen
+						</span>
+					</h1>
+
+					<!-- Descripción -->
+					<p class="text-xl md:text-2xl text-gray-600 mb-16 max-w-4xl mx-auto leading-relaxed font-light">
+						Somos especialistas en cuidado del medio ambiente y mantenimiento de jardines. 
+						Ofrecemos soluciones ecológicas y sostenibles que protegen nuestro planeta mientras 
+						creamos espacios verdes hermosos y funcionales para tu hogar o empresa.
+					</p>
+
+					<!-- Estadísticas -->
+					<div class="grid grid-cols-3 gap-8 max-w-2xl mx-auto">
+						<div class="text-center">
+							<div class="text-3xl font-bold text-emerald-600 mb-2">100%</div>
+							<div class="text-sm text-gray-600">Productos Ecológicos</div>
+						</div>
+						<div class="text-center">
+							<div class="text-3xl font-bold text-green-600 mb-2">500+</div>
+							<div class="text-sm text-gray-600">Jardines Cuidados</div>
+						</div>
+						<div class="text-center">
+							<div class="text-3xl font-bold text-teal-600 mb-2">10+</div>
+							<div class="text-sm text-gray-600">Años de Experiencia</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Sección de Eventos -->
+		<section class="py-20 bg-white/50 backdrop-blur-sm">
+			<div class="container mx-auto px-4">
+				<div class="max-w-6xl mx-auto">
+					<div class="text-center mb-16">
+						<h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+							Nuestros Eventos Ambientales
+						</h2>
+						<p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+							Organizamos eventos especiales para promover la conciencia ambiental y enseñar 
+							técnicas de jardinería sostenible. Cada evento es una oportunidad para aprender 
+							y conectar con la naturaleza.
+						</p>
+					</div>
+
+					<!-- Carrusel de eventos -->
+					<div class="relative">
+						<div class="grid md:grid-cols-3 gap-8">
+							<!-- Evento 1 -->
+							<div class="group relative">
+								<div class="absolute inset-0 bg-gradient-to-r from-emerald-400 to-green-400 rounded-3xl blur-xl opacity-0 group-hover:opacity-75 transition-opacity duration-300"></div>
+								<div class="relative bg-white rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:-translate-y-4 border border-white/20 overflow-hidden">
+									<div class="aspect-w-16 aspect-h-12 bg-gradient-to-br from-emerald-100 to-green-100 rounded-t-3xl flex items-center justify-center">
+										<div class="text-center p-8">
+											<svg class="w-16 h-16 text-emerald-600 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+												<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+											</svg>
+											<p class="text-gray-600 text-sm">Imagen del evento</p>
+										</div>
+									</div>
+									<div class="p-6">
+										<h3 class="text-xl font-bold text-gray-900 mb-3">Taller de Compostaje</h3>
+										<p class="text-gray-600 text-sm leading-relaxed">
+											Aprende a crear tu propio compost casero y contribuye al cuidado del medio ambiente.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- Evento 2 -->
+							<div class="group relative">
+								<div class="absolute inset-0 bg-gradient-to-r from-green-400 to-teal-400 rounded-3xl blur-xl opacity-0 group-hover:opacity-75 transition-opacity duration-300"></div>
+								<div class="relative bg-white rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:-translate-y-4 border border-white/20 overflow-hidden">
+									<div class="aspect-w-16 aspect-h-12 bg-gradient-to-br from-green-100 to-teal-100 rounded-t-3xl flex items-center justify-center">
+										<div class="text-center p-8">
+											<svg class="w-16 h-16 text-green-600 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+												<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+											</svg>
+											<p class="text-gray-600 text-sm">Imagen del evento</p>
+										</div>
+									</div>
+									<div class="p-6">
+										<h3 class="text-xl font-bold text-gray-900 mb-3">Día de Plantación</h3>
+										<p class="text-gray-600 text-sm leading-relaxed">
+											Únete a nuestra jornada de reforestación y ayuda a crear un mundo más verde.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- Evento 3 -->
+							<div class="group relative">
+								<div class="absolute inset-0 bg-gradient-to-r from-teal-400 to-emerald-400 rounded-3xl blur-xl opacity-0 group-hover:opacity-75 transition-opacity duration-300"></div>
+								<div class="relative bg-white rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:-translate-y-4 border border-white/20 overflow-hidden">
+									<div class="aspect-w-16 aspect-h-12 bg-gradient-to-br from-teal-100 to-emerald-100 rounded-t-3xl flex items-center justify-center">
+										<div class="text-center p-8">
+											<svg class="w-16 h-16 text-teal-600 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+												<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+												<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+											</svg>
+											<p class="text-gray-600 text-sm">Imagen del evento</p>
+										</div>
+									</div>
+									<div class="p-6">
+										<h3 class="text-xl font-bold text-gray-900 mb-3">Tour Ecológico</h3>
+										<p class="text-gray-600 text-sm leading-relaxed">
+											Descubre los mejores espacios verdes de la ciudad y aprende sobre biodiversidad.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Sección de Mantenimiento de Jardines -->
+		<section class="py-20">
+			<div class="container mx-auto px-4">
+				<div class="max-w-6xl mx-auto">
+					<div class="text-center mb-16">
+						<h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+							Mantenimiento de Jardines
+						</h2>
+						<p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+							Transformamos espacios exteriores en jardines hermosos y funcionales. 
+							Nuestro equipo de expertos utiliza técnicas sostenibles y productos 
+							ecológicos para mantener tus espacios verdes en perfecto estado.
+						</p>
+					</div>
+
+					<!-- Servicios de jardinería -->
+					<div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+						<!-- Texto -->
+						<div class="space-y-6">
+							<div class="flex items-start space-x-4">
+								<div class="w-8 h-8 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+									<svg class="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 20 20">
+										<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+									</svg>
+								</div>
+								<div>
+									<h3 class="text-lg font-semibold text-gray-900 mb-2">Diseño de Jardines</h3>
+									<p class="text-gray-600">Creamos diseños únicos que se adaptan a tu espacio y estilo de vida.</p>
+								</div>
+							</div>
+
+							<div class="flex items-start space-x-4">
+								<div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+									<svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+										<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+									</svg>
+								</div>
+								<div>
+									<h3 class="text-lg font-semibold text-gray-900 mb-2">Mantenimiento Regular</h3>
+									<p class="text-gray-600">Servicios periódicos para mantener tu jardín siempre hermoso.</p>
+								</div>
+							</div>
+
+							<div class="flex items-start space-x-4">
+								<div class="w-8 h-8 bg-teal-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+									<svg class="w-4 h-4 text-teal-600" fill="currentColor" viewBox="0 0 20 20">
+										<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+									</svg>
+								</div>
+								<div>
+									<h3 class="text-lg font-semibold text-gray-900 mb-2">Sistemas de Riego</h3>
+									<p class="text-gray-600">Instalamos sistemas eficientes que ahorran agua y mantienen tus plantas saludables.</p>
+								</div>
+							</div>
+
+							<div class="flex items-start space-x-4">
+								<div class="w-8 h-8 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+									<svg class="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 20 20">
+										<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+									</svg>
+								</div>
+								<div>
+									<h3 class="text-lg font-semibold text-gray-900 mb-2">Control de Plagas Natural</h3>
+									<p class="text-gray-600">Utilizamos métodos biológicos y productos naturales para proteger tus plantas.</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- Imágenes -->
+						<div class="grid grid-cols-2 gap-4">
+							<div class="space-y-4">
+								<div class="aspect-square bg-gradient-to-br from-emerald-100 to-green-100 rounded-2xl flex items-center justify-center">
+									<div class="text-center">
+										<svg class="w-12 h-12 text-emerald-600 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+										</svg>
+										<p class="text-gray-600 text-xs">Jardín diseñado</p>
+									</div>
+								</div>
+								<div class="aspect-square bg-gradient-to-br from-green-100 to-teal-100 rounded-2xl flex items-center justify-center">
+									<div class="text-center">
+										<svg class="w-12 h-12 text-green-600 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+										</svg>
+										<p class="text-gray-600 text-xs">Plantas saludables</p>
+									</div>
+								</div>
+							</div>
+							<div class="space-y-4 mt-8">
+								<div class="aspect-square bg-gradient-to-br from-teal-100 to-emerald-100 rounded-2xl flex items-center justify-center">
+									<div class="text-center">
+										<svg class="w-12 h-12 text-teal-600 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+										</svg>
+										<p class="text-gray-600 text-xs">Sistema de riego</p>
+									</div>
+								</div>
+								<div class="aspect-square bg-gradient-to-br from-emerald-100 to-green-100 rounded-2xl flex items-center justify-center">
+									<div class="text-center">
+										<svg class="w-12 h-12 text-emerald-600 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+											<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+										</svg>
+										<p class="text-gray-600 text-xs">Control natural</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Sección de Contacto -->
+		<section class="py-20 bg-white/50 backdrop-blur-sm">
+			<div class="container mx-auto px-4">
+				<div class="max-w-4xl mx-auto text-center">
+					<h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+						Cuéntanos tu proyecto
+					</h2>
+					<p class="text-xl text-gray-600 mb-16 max-w-2xl mx-auto leading-relaxed">
+						¿Tienes una idea para tu jardín? ¿Necesitas mantenimiento para tus espacios verdes? 
+						Estamos aquí para ayudarte a crear el jardín de tus sueños.
+					</p>
+
+					<!-- Información de contacto -->
+					<div class="bg-white rounded-3xl shadow-2xl p-12 border border-white/20">
+						<div class="grid md:grid-cols-2 gap-12">
+							<!-- Información -->
+							<div class="space-y-8">
+								<div class="text-left">
+									<h3 class="text-2xl font-bold text-gray-900 mb-6">Información de Contacto</h3>
+									
+									<div class="space-y-6">
+										<div class="flex items-center space-x-4">
+											<div class="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center">
+												<svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+													<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+												</svg>
+											</div>
+											<div>
+												<p class="text-sm text-gray-500">Email</p>
+												<p class="text-lg font-semibold text-gray-900">verdegreen@proserv-chile.cl</p>
+											</div>
+										</div>
+
+										<div class="flex items-center space-x-4">
+											<div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+												<svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+													<path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.746-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+												</svg>
+											</div>
+											<div>
+												<p class="text-sm text-gray-500">Instagram</p>
+												<p class="text-lg font-semibold text-gray-900">@verdegreen_vg</p>
+											</div>
+										</div>
+
+										<div class="flex items-center space-x-4">
+											<div class="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center">
+												<svg class="w-6 h-6 text-teal-600" fill="currentColor" viewBox="0 0 24 24">
+													<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+												</svg>
+											</div>
+											<div>
+												<p class="text-sm text-gray-500">WhatsApp</p>
+												<p class="text-lg font-semibold text-gray-900">+56 9 1234 5678</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Botón de contacto -->
+							<div class="flex flex-col justify-center">
+								<a 
+									href="/contact" 
+									class="inline-block bg-gradient-to-r from-emerald-600 to-green-600 text-white px-12 py-6 rounded-2xl font-bold hover:from-emerald-700 hover:to-green-700 transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl text-xl"
+								>
+									Contactar Ahora
+								</a>
+								<p class="text-gray-600 mt-4 text-sm">
+									Te responderemos en menos de 24 horas
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Sección de Próximos Eventos y Novedades -->
+		<section class="py-20">
+			<div class="container mx-auto px-4">
+				<div class="max-w-6xl mx-auto">
+					<div class="text-center mb-16">
+						<h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+							Próximos Eventos y Novedades
+						</h2>
+						<p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+							Mantente al día con nuestros eventos especiales, talleres educativos 
+							y las últimas novedades en cuidado del medio ambiente.
+						</p>
+					</div>
+
+					<div class="grid md:grid-cols-2 gap-8">
+						<!-- Próximo evento -->
+						<div class="bg-white rounded-3xl shadow-2xl p-8 border border-white/20">
+							<div class="flex items-center mb-6">
+								<div class="w-16 h-16 bg-gradient-to-br from-emerald-100 to-green-100 rounded-2xl flex items-center justify-center mr-4">
+									<svg class="w-8 h-8 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+									</svg>
+								</div>
+								<div>
+									<h3 class="text-xl font-bold text-gray-900">Próximo Evento</h3>
+									<p class="text-emerald-600 font-semibold">Taller de Huertos Urbanos</p>
+								</div>
+							</div>
+							<p class="text-gray-600 mb-4">
+								Aprende a crear tu propio huerto en espacios reducidos. 
+								Incluye materiales y semillas para comenzar tu proyecto.
+							</p>
+							<div class="flex items-center text-sm text-gray-500">
+								<svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+								</svg>
+								Sábado 15 de Marzo, 10:00 AM
+							</div>
+						</div>
+
+						<!-- Novedad -->
+						<div class="bg-white rounded-3xl shadow-2xl p-8 border border-white/20">
+							<div class="flex items-center mb-6">
+								<div class="w-16 h-16 bg-gradient-to-br from-green-100 to-teal-100 rounded-2xl flex items-center justify-center mr-4">
+									<svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+									</svg>
+								</div>
+								<div>
+									<h3 class="text-xl font-bold text-gray-900">Nueva Línea</h3>
+									<p class="text-green-600 font-semibold">Productos 100% Orgánicos</p>
+								</div>
+							</div>
+							<p class="text-gray-600 mb-4">
+								Lanzamos nuestra nueva línea de fertilizantes y pesticidas 
+								totalmente orgánicos, certificados y eco-amigables.
+							</p>
+							<div class="flex items-center text-sm text-gray-500">
+								<svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+								</svg>
+								Disponible desde Marzo 2024
+							</div>
+						</div>
+					</div>
+
+					<!-- Newsletter -->
+					<div class="mt-16 text-center">
+						<div class="bg-gradient-to-br from-emerald-500 to-green-600 rounded-3xl p-12 text-white">
+							<h3 class="text-3xl font-bold mb-4">¡No te pierdas nada!</h3>
+							<p class="text-xl mb-8 opacity-90">
+								Suscríbete a nuestro newsletter y recibe las últimas noticias 
+								y ofertas especiales directamente en tu correo.
+							</p>
+							<div class="max-w-md mx-auto flex space-x-4">
+								<input 
+									type="email" 
+									placeholder="Tu email aquí..." 
+									class="flex-1 px-6 py-4 rounded-2xl text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white/50"
+								/>
+								<button class="bg-white text-emerald-600 px-8 py-4 rounded-2xl font-bold hover:bg-gray-100 transition-colors duration-300">
+									Suscribirse
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</Layout>
