@@ -1,8 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `components`, and start fresh.
 ---
 
 <Layout title="ProServ - Chile. Servicios profesionales de control de plagas">
@@ -11,7 +9,7 @@ import Layout from '../layouts/Layout.astro';
 		<div class="absolute inset-0 bg-gradient-to-br from-slate-50 via-blue-50 to-emerald-50"></div>
 		
 		<!-- Elementos decorativos sutiles -->
-		<div class="absolute inset-0">
+		<div class="fixed inset-0">
 			<!-- Círculos flotantes con opacidad muy baja -->
 			<div class="absolute top-20 left-10 w-96 h-96 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
 			<div class="absolute top-40 right-20 w-80 h-80 bg-emerald-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" style="animation-delay: 2s;"></div>
@@ -23,17 +21,13 @@ import Layout from '../layouts/Layout.astro';
 			<!-- Hero Section con diseño más impactante -->
 			<div class="container mx-auto px-4 py-24 text-center">
 				<div class="max-w-5xl mx-auto">
-					<!-- Badge superior -->
-					<div class="inline-flex items-center px-6 py-3 bg-white/80 backdrop-blur-sm rounded-full shadow-lg border border-white/20 mb-8">
-						<div class="w-2 h-2 bg-green-500 rounded-full mr-3 animate-pulse"></div>
-						<span class="text-sm font-medium text-gray-700">Grupo Empresarial Líder en Chile</span>
-					</div>
 					
 					<h1 class="text-6xl md:text-8xl font-black text-gray-900 mb-8 leading-tight">
 						Bienvenido a 
-						<span class="bg-gradient-to-r from-green-600 via-emerald-600 to-blue-600 bg-clip-text text-transparent">
+						<!-- <span class="bg-gradient-to-r from-blue-600 via-emerald-600 to-green-600 bg-clip-text text-transparent">
 							ProServ Chile
-						</span>
+						</span> -->
+						<img src="/images/logo/proserv-logo-sf.png" alt="Logo ProServ" class="flex items-center justify-center mx-auto xl:h-52 md:h-40 sm:h-32 h-20 mt-4">
 					</h1>
 					
 					<p class="text-2xl md:text-3xl text-gray-600 mb-16 max-w-4xl mx-auto leading-relaxed font-light">
@@ -42,7 +36,7 @@ import Layout from '../layouts/Layout.astro';
 					</p>
 					
 					<!-- Estadísticas rápidas -->
-					<div class="grid grid-cols-3 gap-8 max-w-2xl mx-auto mb-16">
+					<!-- <div class="grid grid-cols-3 gap-8 max-w-2xl mx-auto mb-16">
 						<div class="text-center">
 							<div class="text-3xl font-bold text-green-600 mb-2">15+</div>
 							<div class="text-sm text-gray-600">Años de Experiencia</div>
@@ -55,7 +49,7 @@ import Layout from '../layouts/Layout.astro';
 							<div class="text-3xl font-bold text-emerald-600 mb-2">24/7</div>
 							<div class="text-sm text-gray-600">Soporte Disponible</div>
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 
@@ -66,7 +60,7 @@ import Layout from '../layouts/Layout.astro';
 						Nuestras Empresas
 					</h2>
 					<p class="text-xl text-gray-600 max-w-2xl mx-auto">
-						Cada empresa está especializada en su área de expertise para brindarte el mejor servicio
+						Cada empresa está especializada en su área de expertís para brindarte el mejor servicio.
 					</p>
 				</div>
 				
@@ -126,7 +120,7 @@ import Layout from '../layouts/Layout.astro';
 									href="/proserv" 
 									class="inline-block w-full bg-gradient-to-r from-green-600 to-emerald-600 text-white px-8 py-4 rounded-2xl font-bold hover:from-green-700 hover:to-emerald-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
 								>
-									Conocer Servicios
+									Conocer Más
 								</a>
 							</div>
 						</div>
@@ -184,10 +178,10 @@ import Layout from '../layouts/Layout.astro';
 								</div>
 								
 								<a 
-									href="/esfinge" 
+									href="/contact" 
 									class="inline-block w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-2xl font-bold hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
 								>
-									Conocer Servicios
+									Contactar Ahora
 								</a>
 							</div>
 						</div>
@@ -245,10 +239,10 @@ import Layout from '../layouts/Layout.astro';
 								</div>
 								
 								<a 
-									href="/verdegreen" 
+									href="/contact" 
 									class="inline-block w-full bg-gradient-to-r from-emerald-600 to-teal-600 text-white px-8 py-4 rounded-2xl font-bold hover:from-emerald-700 hover:to-teal-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
 								>
-									Conocer Servicios
+									Contactar Ahora
 								</a>
 							</div>
 						</div>
@@ -259,8 +253,6 @@ import Layout from '../layouts/Layout.astro';
 			<!-- Información Adicional con diseño más atractivo -->
 			<div class="container mx-auto px-4 pb-24">
 				<div class="relative">
-					<!-- Fondo con patrón -->
-					<div class="absolute inset-0 bg-gradient-to-br from-gray-50 to-blue-50 rounded-3xl"></div>
 					
 					<div class="relative bg-white/80 backdrop-blur-sm rounded-3xl shadow-2xl p-16 max-w-6xl mx-auto text-center border border-white/20">
 						<h2 class="text-5xl font-bold text-gray-900 mb-16">
@@ -275,7 +267,7 @@ import Layout from '../layouts/Layout.astro';
 									</svg>
 								</div>
 								<h3 class="text-2xl font-bold text-gray-900 mb-4">Experiencia</h3>
-								<p class="text-gray-600 text-lg leading-relaxed">Más de 15 años de experiencia en el sector con resultados comprobados y clientes satisfechos</p>
+								<p class="text-gray-600 text-lg leading-relaxed">Profesionales con experiencia en su área y estudios de postgrado.</p>
 							</div>
 							
 							<div class="text-center group">
@@ -285,7 +277,7 @@ import Layout from '../layouts/Layout.astro';
 									</svg>
 								</div>
 								<h3 class="text-2xl font-bold text-gray-900 mb-4">Certificación</h3>
-								<p class="text-gray-600 text-lg leading-relaxed">Personal capacitado y certificado en todas las áreas, cumpliendo con los más altos estándares</p>
+								<p class="text-gray-600 text-lg leading-relaxed">Resolución sanitaria aprobada por Seremi RM.</p>
 							</div>
 							
 							<div class="text-center group">
@@ -295,7 +287,7 @@ import Layout from '../layouts/Layout.astro';
 									</svg>
 								</div>
 								<h3 class="text-2xl font-bold text-gray-900 mb-4">Compromiso</h3>
-								<p class="text-gray-600 text-lg leading-relaxed">Comprometidos con la calidad, innovación y satisfacción total de nuestros clientes</p>
+								<p class="text-gray-600 text-lg leading-relaxed">Comprometidos con la calidad, innovación y satisfacción total de nuestros clientes.</p>
 							</div>
 						</div>
 						
@@ -305,7 +297,7 @@ import Layout from '../layouts/Layout.astro';
 								¿Listo para comenzar?
 							</h3>
 							<p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-								Contáctanos hoy mismo y descubre cómo podemos ayudarte con tus necesidades
+								Contáctanos hoy mismo y descubre cómo podemos ayudarte con tus necesidades.
 							</p>
 							<a 
 								href="/contact" 
