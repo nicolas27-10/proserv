@@ -13,10 +13,11 @@ import Service_card from "./Service_card.astro";
         title='Control de insectos' 
         imageUrl='/images/services/cucarachas.jpg' 
         elements= {[
-          { text: 'Control de cucarachas' }, 
-          { text: 'Control de termitas'},
-          { text: 'Control de avispas'}
+          { text: 'Control rastreros' }, 
+          { text: 'Control de voladores'},
+          { text: 'Control de xilofagos'}
         ]}
+        button="Cotiza aquí"
       />
       
       <Service_card 
@@ -28,13 +29,15 @@ import Service_card from "./Service_card.astro";
           { text: 'Control de ratones'}, 
           { text: 'Control de conejos'}
         ]}
+        button="Cotiza aquí"
       />
 
       <Service_card 
         id='rescate-abejas'
         title='Rescate y relocalización de abejas' 
-        description='Junto a los apicultores de <a href="https://www.instagram.com/polinizarte.cl/?hl=es" target="_blank" class="text-blue-600">Polinizarte SpA</a> ofrecemos el servicio de panales de abejas presentes en casa o jardines relocalizándolas.'
+        description='Junto a los apicultores de <a href="https://www.instagram.com/polinizarte.cl/?hl=es" target="_blank" class="text-blue-600">Polinizarte SpA</a> ofrecemos servicio de rescate y relocalización de enjambres y/o nidos de abejas presentes en casa o jardines.'
         imageUrl='/images/services/cucarachas.jpg' 
+        button="Cotiza aquí"
       />
     </div>
   </div>
@@ -46,50 +49,77 @@ import Service_card from "./Service_card.astro";
       <Service_card 
         id='aseo-profundo'
         title='Aseo profundo' 
-        description='Aseo inicial para posterior mantención.'
+        description='Aseo inicial.'
         imageUrl='/images/services/roedor.jpg' 
+        button="Cotiza aquí"
       />
 
       <Service_card 
         id='limpieza-mantencion'
-        title='Limpieza de mantención' 
-        imageUrl='/images/services/termitas.jpg' 
+        title='Aseo de mantención' 
+        description='Aseo periodico.'
+        imageUrl='/images/services/termitas.jpg'
+        button="Cotiza aquí" 
+      />
+    </div>
+  </div>
+
+  <!-- Servicios veterinarios -->
+  <div class="mb-16">
+    <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center md:text-start">Servicios veterinarios</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <Service_card 
+        id='consultas-generales'
+        title='Consultas veterinarias generales' 
+        imageUrl='/images/services/cucarachas.jpg' 
+        button="Agenda aquí"
+      />
+
+      <Service_card 
+        id='telemedicina'
+        title='Consultas telemedicina' 
+        imageUrl='/images/services/roedor.jpg' 
+        button="Agenda aquí"
       />
     </div>
   </div>
 
   <!-- Servicio de mantención de jardines -->
-  <div class="mb-16">
+  <!-- <div class="mb-16">
     <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center md:text-start">Servicio de mantención de jardines</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       <Service_card 
         id='mantencion-jardines'
         title='Mantención de áreas verdes y jardines' 
         imageUrl='/images/services/cucarachas.jpg' 
+        button=""
       />
 
       <Service_card 
         id='sistemas-riego'
         title='Reparación y construcción de sistemas de riego' 
         imageUrl='/images/services/roedor.jpg' 
+        button=""
       />
     </div>
-  </div>
+  </div> -->
 
   <!-- Servicio de asesoría profesional -->
   <div class="mb-16">
-    <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center md:text-start">Servicio de asesoría profesional</h2>
+    <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center md:text-start">Servicio de capacitación y asesorías profesionales</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       <Service_card 
-        id='asesoria-plagas'
-        title='Asesorías en control de plagas urbanas y de jardín' 
+        id='asesorias-profesionales'
+        title='Asesorías profesionales' 
         imageUrl='/images/services/termitas.jpg' 
+        button="Dinos que necesitas"
       />
 
       <Service_card 
-        id='asesoria-huertas'
-        title='Asesorías en huertas urbanas' 
+        id='actividades'
+        title='Actividades al aire libre' 
         imageUrl='/images/services/cucarachas.jpg' 
+        button="Consulta aquí"
       />
     </div>
   </div>
