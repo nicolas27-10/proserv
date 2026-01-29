@@ -16,12 +16,59 @@ import ClientRouter from 'astro/components/ClientRouter.astro';
 <!doctype html> 
 <html lang="es">
 	<head>
+		<!-- Básico -->
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="images/logo/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#0f172a" />
+	  
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" href="/images/logo/favicon.png" />
+	  
+		<!-- SEO Principal -->
 		<title>{title}</title>
+		<meta
+		  name="description"
+		  content="ProServ Chile ofrece servicios profesionales de control de plagas, servicios veterinarios, capacitación, asesorías profesionales y actividades al aire libre."
+		/>
+		<meta
+		  name="keywords"
+		  content="control de plagas, sanitización, desratización, fumigación, servicios sanitarios, ProServ Chile, control de plagas Chile, servicios veterinarios, capacitación, asesorías profesionales"
+		/>
+		<meta name="author" content="ProServ Chile" />
+		<meta name="robots" content="index, follow" />
+	  
+		<!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="ProServ Chile" />
+		<meta property="og:title" content="ProServ Chile | Servicios Profesionales" />
+		<meta
+		  property="og:description"
+		  content="Servicios profesionales de control de plagas, sanitización y soluciones integrales para empresas y hogares en Chile."
+		/>
+		<meta property="og:url" content="https://proserv-chile.com" />
+		<meta
+		  property="og:image"
+		  content="https://proserv-chile.com/images/logo/proserv-logo-sf.png"
+		/>
+	  
+		<!-- Twitter Cards -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="ProServ Chile | Servicios Profesionales" />
+		<meta
+		  name="twitter:description"
+		  content="Control de plagas, sanitización y servicios profesionales en Chile."
+		/>
+		<meta
+		  name="twitter:image"
+		  content="https://proserv-chile.com/images/logo/proserv-logo-sf.png"
+		/>
+	  
+		<!-- Canonical -->
+		<link rel="canonical" href="https://proserv-chile.com" />
+	  
+		<!-- Astro Router -->
 		<ClientRouter />
-	</head>
+	  </head>
 	<!-- <body class="scroll-smooth">
 		<Header/>
 		<slot />
