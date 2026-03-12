@@ -15,16 +15,15 @@ const {
 ---
 
 <aside id="banner-inscripcion" class="inscripcion-banner bg-gradient-to-r from-teal-600 via-emerald-600 to-teal-700 text-white">
-  <div class="max-w-[1400px] mx-auto flex flex-wrap items-center justify-between gap-3 md:gap-4 md:py-2.5 py-3 2xl:px-0 px-4">
-    <!-- <div class="flex-1 min-w-0 hidden md:block"></div> -->
-
-    <div class="flex-shrink-0 w-9 h-9 rounded-lg bg-white/20 flex items-center justify-center backdrop-blur-sm">
-        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 
-        18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-        </svg>
-    </div> 
-    <div class="flex items-center justify-center gap-3 flex-1 min-w-0 order-first md:order-none">
+  <div class="max-w-[1400px] mx-auto flex flex-nowrap items-center justify-between gap-3 md:gap-4 md:py-2.5 py-3 2xl:px-0 px-4">
+    <!-- 1. SVG cámara -->
+    <div class="flex-shrink-0 w-9 h-9 rounded-lg bg-white/20 flex items-center justify-center backdrop-blur-sm order-1">
+      <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+      </svg>
+    </div>
+    <!-- 2. Título + descripción -->
+    <div class="flex items-center justify-center gap-3 flex-1 min-w-0 order-2">
       <span class="titulo-destacado font-bold md:text-base text-sm inline-flex items-center gap-2">
         <span class="barra-llamativa" aria-hidden="true"></span>
         {titulo}
@@ -33,7 +32,8 @@ const {
         {descripcion}
       </span>
     </div>
-    <div class="flex items-center gap-2">
+    <!-- 3. Botón inscribirse -->
+    <div class="flex items-center gap-2 flex-shrink-0 order-3">
       <a 
         href={href}
         class="inline-flex items-center gap-2 bg-white text-teal-700 font-semibold md:px-5 px-4 md:py-2 py-1.5 rounded-lg hover:bg-teal-50 transition-all duration-200 hover:scale-105 active:scale-100 shadow-md hover:shadow-lg text-sm whitespace-nowrap"
