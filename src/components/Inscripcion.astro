@@ -1,0 +1,92 @@
+---
+interface Props {
+  href?: string;
+  titulo?: string;
+  descripcion?: string;
+  cta?: string;
+}
+
+const { 
+  href = '/contact', 
+  titulo = 'Charlas informativas',
+  descripcion = 'Inscríbete a nuestras charlas sobre control de plagas, sanitización y buenas prácticas.',
+  cta = 'Inscribirme'
+} = Astro.props;
+---
+
+<aside id="banner-inscripcion" class="inscripcion-banner bg-gradient-to-r from-teal-600 via-emerald-600 to-teal-700 text-white">
+  <div class="max-w-[1400px] mx-auto flex flex-wrap items-center justify-center md:justify-between gap-3 md:gap-4 md:py-2.5 py-3 2xl:px-0 px-4">
+    <div class="flex items-center gap-3 flex-1 justify-center md:justify-start min-w-0">
+      <div class="flex-shrink-0 w-9 h-9 rounded-lg bg-white/20 flex items-center justify-center backdrop-blur-sm">
+        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+        </svg>
+      </div>
+      <div class="text-center md:text-left min-w-0">
+        <span class="font-bold md:text-base text-sm block">
+          {titulo}
+        </span>
+        <span class="text-white/90 text-xs md:text-sm hidden sm:inline">
+          {descripcion}
+        </span>
+      </div>
+    </div>
+    <div class="flex items-center gap-2">
+      <a 
+        href={href}
+        class="inline-flex items-center gap-2 bg-white text-teal-700 font-semibold md:px-5 px-4 md:py-2 py-1.5 rounded-lg hover:bg-teal-50 transition-all duration-200 hover:scale-105 active:scale-100 shadow-md hover:shadow-lg text-sm whitespace-nowrap"
+      >
+        {cta}
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+
+      <!-- Cerrar banner -->
+      <!-- <button 
+        type="button"
+        aria-label="Cerrar banner"
+        class="cerrar-banner p-2 rounded-lg hover:bg-white/20 transition-colors text-white/90 hover:text-white"
+      >
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button> -->
+    </div>
+  </div>
+</aside>
+
+<!-- <script>
+  (function() {
+    const STORAGE_KEY = 'proserv-inscripcion-banner-cerrado';
+    
+    const banner = document.getElementById('banner-inscripcion');
+    if (!banner) return;
+
+    // Restaurar estado cerrado
+    if (typeof localStorage !== 'undefined' && localStorage.getItem(STORAGE_KEY) === 'true') {
+      banner.classList.add('hidden');
+      document.body.classList.remove('has-banner-inscripcion');
+      return;
+    }
+
+    const cerrarBtn = banner.querySelector('.cerrar-banner');
+    cerrarBtn?.addEventListener('click', () => {
+      banner.classList.add('hidden');
+      document.body.classList.remove('has-banner-inscripcion');
+      try {
+        localStorage.setItem(STORAGE_KEY, 'true');
+      } catch (_) {}
+    });
+  })();
+</script> -->
+
+<style>
+  .inscripcion-banner {
+    box-shadow: 0 2px 10px -2px rgba(13, 148, 136, 0.25);
+  }
+  
+  .inscripcion-banner.hidden {
+    display: none !important;
+  }
+</style>

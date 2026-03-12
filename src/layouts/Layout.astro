@@ -6,6 +6,7 @@ interface Props {
 const { title } = Astro.props as Props;
 
 import '../styles/global.css'
+import Inscripcion from '../components/Inscripcion.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import '@fontsource-variable/montserrat';
@@ -75,8 +76,11 @@ import ClientRouter from 'astro/components/ClientRouter.astro';
 		<Footer/>
 	</body> -->
 
-	<body class="scroll-smooth font-montserrat min-h-screen grid grid-rows-[auto_1fr_auto]">
-		<Header />
+	<body class="scroll-smooth font-montserrat min-h-screen grid grid-rows-[auto_1fr_auto] has-banner-inscripcion">
+		<div class="fixed top-0 left-0 right-0 z-50 ">
+			<Inscripcion />
+			<Header />
+		</div>
 		<main class="min-h-0 md:mt-16 mt-12">
 			<slot />
 		</main>
@@ -91,5 +95,14 @@ import ClientRouter from 'astro/components/ClientRouter.astro';
 <style>
 	body {
   		font-family: 'Montserrat Variable', sans-serif;
+	}
+	/* Espaciado extra cuando el banner de inscripción está visible */
+	body.has-banner-inscripcion main {
+		margin-top: 6rem;
+	}
+	@media (min-width: 768px) {
+		body.has-banner-inscripcion main {
+			margin-top: 7rem;
+		}
 	}
 </style>
